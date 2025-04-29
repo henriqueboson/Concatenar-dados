@@ -2,10 +2,10 @@
   > função para concatenar nome dos projetos com nome das atividades
   
   > histórico de revisões
-      - 20250428 - R01
+      - 20250429
         - autor: Henrique
         - observações:
-        - em desenvolvimento
+        - em dev 
         
 */
 
@@ -34,7 +34,10 @@ function concatenarMSP() {
     
     for (var i = 0; i < dados.length; i++) {
         // Verificar se temos um texto com a cor específica na coluna G
-        if (fontColors[i][0] === corEspecifica) {
+        
+        Logger.log("Linha " + (i+1) + " - Cor da fonte G: " + fontColors[i][0]);
+
+        if (fontColors[i][0].toLowerCase() === corEspecifica.toLowerCase()){
             valorGdaVez = dados[i][6]; // Atualiza o valor G da seção atual
             processar = true;
             secoesConcatenadas++;

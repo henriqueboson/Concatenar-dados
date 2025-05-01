@@ -1,1 +1,1 @@
-# Concatenar-dados
+Função para concatenar e excluir colunas específicas conforme as condições
